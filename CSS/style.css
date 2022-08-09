@@ -1,0 +1,168 @@
+/* Custom Font Addition */
+@font-face {
+  font-family: 'SG Fitzrovia';
+  src: url('../Assets/SGFitzrovia.woff2') format('woff2'),
+    url('../Assets/SGFitzrovia.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font Override */
+* {
+  font-family: 'SG Fitzrovia';
+}
+
+/* Font anti-aliasing */
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background */
+html {
+  background: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*Head */
+.wrapper {
+  z-index: 100000;
+}
+
+/* Body */
+body {
+  position: relative;
+  margin: 0px;
+}
+
+#confetti{
+	background: #000;
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: -1;
+}
+
+.happy {
+  font-size: 5rem;
+  max-width: 100%;
+  color: mediumslateblue;
+  display: flex;
+  justify-content: center;
+}
+
+.happy:after {
+  content: "";
+  display: inline-block;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 500px;
+}
+
+.presents {
+  margin-top: 80px;
+  font-size: 2rem;
+  color: plum;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Links */
+a {
+  color: plum;
+  text-decoration: none;
+}
+
+a {
+  background:
+    linear-gradient(
+      to right,
+      rgb(255, 150, 236, 1),
+      rgb(255, 61, 219, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+}
+
+a {
+  background:
+    linear-gradient(
+      to right,
+      rgba(255, 150, 236, 1),
+      rgba(255, 61, 219, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+}
+
+a {
+  background:
+    linear-gradient(
+      to right,
+      rgba(255, 150, 236, 1),
+      rgba(255, 61, 219, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+a {
+  background:
+    linear-gradient(
+      to right,
+      rgb(102, 55, 255),
+      rgba(255, 61, 219, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
